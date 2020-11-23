@@ -1,0 +1,14 @@
+.page-section table, th, td{
+    width: 50%;
+    border: 1px solid black;
+}
+
+.page-section td{
+    font-style: italic;
+    margin-left: 20px;  
+
+}
+
+.page-section th{
+    text-align: left;
+}
