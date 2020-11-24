@@ -12,3 +12,8 @@
 .page-section th{
     text-align: left;
 }
+
+.page-section img{
+    width: 300px;
+    margin-top: 10px;
+}
