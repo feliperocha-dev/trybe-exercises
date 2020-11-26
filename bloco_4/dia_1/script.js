@@ -6,7 +6,7 @@ let percentage = 39;
 let saleValue = 3.5;
 let productPrice = 1;
 let saleAmount = 1000;
-let salary = 0;
+let salary = 3700;
 
 
 //Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas variáveis, a e b , definidas no começo com os valores que serão operados. 
@@ -126,49 +126,45 @@ profitCalcutation(productPrice, saleValue, saleAmount);
 
 //Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 function inss (salary){
+    let inss = 0;
     if ( salary <= 1556.94 && salary > 0 ){
-        salary = salary - (salary * 0.08);
-        return salary;
+        inss = (salary * 0.08);
+        return inss;
     } else if ( salary > 1556.94  && salary <= 2594.92 ){
-        salary = salary - (salary * 0.09);
-        return salary;
+        inss = (salary * 0.09);
+        return inss;
     } else if ( salary > 2594.92  && salary <= 5189.82 ){
-        salary = salary - (salary * 0.11);
-        return salary;
+        inss = (salary * 0.11);
+        return inss;
     } else if ( salary > 5189.82 ){
-        salary = salary - 570.88;
-        return salary;
+        inss = 570.88;
+        return inss;
     } else {
-        salary = -1;
-        return salary;
+        return inss;
     } 
 }
 
 function ir (salary){
+    let ir = 0;
     if ( salary <= 1903.98 && salary > 0 ){
-        return salary;
+        return ir;
     } else if ( salary > 1903.98  && salary <= 2826.65 ){
-        salary = salary - ((salary * 0.07) - 142.8);
-        return salary;
+        ir = ((salary * 0.075) - 142.8);
+        return ir;
     } else if ( salary > 2826.65  && salary <= 3751.05 ){
-        salary = salary - ((salary * 0.15) - 354.80);
-        return salary;
+        ir = ((salary * 0.15) - 354.80);
+        return ir;
     } else if ( salary > 3751.05 && salary <= 4664.68 ){
-        salary = salary - ((salary * 0.225) - 636.13) ;
-        return salary;
+        ir = ((salary * 0.225) - 636.13) ;
+        return ir;
     } else if ( salary > 4664.68 ){
-        salary = salary - ((salary * 0.275) - 869.36) ;
-        return salary;
+        ir = ((salary * 0.275) - 869.36) ;
+        return ir;
     } else {
-        salary = -1;
-        return salary;
+        return ir;
     } 
 }
 
-salary = ir(inss(salary));
-switch ( salary == -1 ) {
-    case true:
-        console.log ('Erro! Salário informado inválido')
-    case false:
-        console.log ('Seu salário liquido é: ' ,  salary)
-}
+salary = salary - inss(salary);
+salary = salary - ir(salary);
+console.log('Seu salario liquido é: ' , salary);
