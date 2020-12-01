@@ -15,7 +15,6 @@ if ( number > 1 ){
 }
 
 //2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base.
-number =  5;
 asterisk = '';
 if ( number > 0){
     for ( let indice = 1 ; indice <= number ; indice += 1 ){
@@ -27,7 +26,6 @@ if ( number > 0){
 }
 
 //3- Agora inverta o lado do triângulo. Por exemplo:
-number =  5;
 if ( number > 0){
     for ( let indice = 1 ; indice <= number ; indice += 1 ){
         asterisk = '';
@@ -44,7 +42,6 @@ if ( number > 0){
 }
 
 //4- Depois, faça uma pirâmide com n asteriscos de base:
-number =  5;
 if ( number > 0){
     for ( let indice = 0 ; indice <= number ; indice += 1 ){
         if ((indice % 2) != 0 ){

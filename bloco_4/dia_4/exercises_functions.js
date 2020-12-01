@@ -45,7 +45,7 @@ console.log('Indice do menor numero do array: ' , verifylowerInteger(arrayIntTwo
 
 function verifyMostCharacters (array) {
     let str = '';
-    for ( index = 0 ; index < array.length ; index += 1 ){
+    for ( let index = 0 ; index < array.length ; index += 1 ){
         strTwo =  array[index];
         if ( str.length < array[index].length ){
             str = array[index];
@@ -56,3 +56,55 @@ function verifyMostCharacters (array) {
 
 let arrayNames = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 console.log('Maior nome no array do array: ' , verifyMostCharacters(arrayNames));
+
+//Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
+function verifyRepeatInteger (array) {
+    let count = [];
+    let countTwo = [];   
+    for ( let index = 0 ; index < array.length ; index += 1 ){
+        let countThree = 0;
+        for ( indexTwo = 0 ; indexTwo < array.length ; indexTwo += 1 ){
+            if (array[index] === array[indexTwo]){
+                count.push(array[index]);
+                countThree += 1;
+            }
+        }
+        countTwo.push(countThree);
+    }
+    return count[verifyHigherInteger(countTwo)];
+}
+
+let arrayIntThree = [2, 3, 2, 5, 8, 2, 3];
+console.log('Numero que mais se repete: ' , verifyRepeatInteger(arrayIntThree));
+
+//Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
+
+function sumNumber (num){
+    let sum =0
+    for ( let index = 1 ; index <= num ; index += 1 ){
+        sum += index;
+    }
+    return sum;
+}
+
+let num = 5;
+console.log('Somatorio dos numero de 1 até N: ' , sumNumber(num));
+
+//Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
+
+function verifyWordEnd (word, ending){
+    let str = word.slice( ( word.length - ending.length ) , word.length );
+    if (str === ending){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let word = 'trybe';
+let ending = 'be';
+console.log('A string ending é o final da string word?' , verifyWordEnd(word,ending));
+word = 'joaofernando';
+ending = 'fernan';
+console.log('A string ending é o final da string word?' , verifyWordEnd(word,ending));
