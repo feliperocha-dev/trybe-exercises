@@ -18,5 +18,26 @@
           <div id="quartoEUltimoFilho"></div>
         </div>
       </div>
+      <script>
+        /*
+        Acesse o elemento elementoOndeVoceEsta .
+        Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+        Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+        Acesse o primeiroFilho a partir de pai .
+        Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
+        Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+        Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+        Agora acesse o terceiroFilho a partir de pai .
+        */
+        let elementMe = document.getElementById('elementoOndeVoceEsta');
+        elementMe.parentNode.style.color = 'red';
+        elementMe.childNodes[1].innerText = 'lorem ipsum';
+        document.getElementById('pai').childNodes[1];
+        elementMe.parentNode.childNodes[1];
+        elementMe.previousElementSibling;
+        elementMe.nextSibling;
+        elementMe.nextElementSibling;
+        elementMe.parentNode.childNodes[5];
+      </script>
 </body>
 </html>
