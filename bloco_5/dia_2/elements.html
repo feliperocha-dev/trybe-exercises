@@ -49,12 +49,12 @@
         elementMe.appendChild(elementDivTwo);
         elementMe.childNodes[1].appendChild(document.createElement('div'));
         elementMe.childNodes[1].childNodes[1].parentNode.parentNode.nextElementSibling;
-        let father = document.getElementById('pai');
-        for (let index = 0; index < father.childNodes.length ; index += 1){
-          let elementToDelete = father.childNodes[index];
-          console.log(elementToDelete)
-          if ( (elementToDelete !== elementMe) ) {
-            father.removeChild(elementToDelete);
+        let divs = document.querySelectorAll('div');
+        for (let index = 0; index < divs.length + index ; index += 1){
+          let elementToDelete = divs[index];
+          if ( (elementToDelete !== elementMe) || (elementToDelete !== elementMe.childNodes) 
+          || (elementToDelete !== elementMe.parent.node)) {
+            divs.removeChild(elementToDelete);
           }
         }
       </script>
