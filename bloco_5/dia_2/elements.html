@@ -20,14 +20,19 @@
       </div>
       <script>
         /*
-        Acesse o elemento elementoOndeVoceEsta .
-        Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
-        Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
-        Acesse o primeiroFilho a partir de pai .
-        Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
-        Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
-        Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
-        Agora acesse o terceiroFilho a partir de pai .
+        Acesse o elemento elementoOndeVoceEsta.[ok]
+        Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.[ok]
+        Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?[ok]
+        Acesse o primeiroFilho a partir de pai .[ok]
+        Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .[ok]
+        Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .[ok]
+        Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .[ok]
+        Agora acesse o terceiroFilho a partir de pai .[ok]
+        Crie um irmão para elementoOndeVoceEsta .[ok]
+        Crie um filho para elementoOndeVoceEsta .[ok]
+        Crie um filho para primeiroFilhoDoFilho .[ok]
+        A partir desse filho criado, acesse terceiroFilho.[ok]
+        Remova todos os elementos da página, menos pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
         */
         let elementMe = document.getElementById('elementoOndeVoceEsta');
         elementMe.parentNode.style.color = 'red';
@@ -38,6 +43,20 @@
         elementMe.nextSibling;
         elementMe.nextElementSibling;
         elementMe.parentNode.childNodes[5];
+        let elementDiv = document.createElement('div');
+        elementMe.parentNode.appendChild(elementDiv);
+        let elementDivTwo = document.createElement('div');
+        elementMe.appendChild(elementDivTwo);
+        elementMe.childNodes[1].appendChild(document.createElement('div'));
+        elementMe.childNodes[1].childNodes[1].parentNode.parentNode.nextElementSibling;
+        let father = document.getElementById('pai');
+        for (let index = 0; index < father.childNodes.length ; index += 1){
+          let elementToDelete = father.childNodes[index];
+          console.log(elementToDelete)
+          if ( (elementToDelete !== elementMe) ) {
+            father.removeChild(elementToDelete);
+          }
+        }
       </script>
 </body>
 </html>
