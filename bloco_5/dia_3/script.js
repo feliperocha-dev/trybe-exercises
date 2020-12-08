@@ -1,3 +1,19 @@
+createHolidayButton();
+
+createDaysOfTheWeek();
+
+createDaysOfMonth();
+
+createFridayButton();
+
+createTask('cozinhar');
+
+createSubtitle('yellow');
+
+createTask(' estudar');
+
+createSubtitle('blue');
+
 function createDaysOfTheWeek() {
     const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
     const weekDaysList = document.querySelector('.week-days');
@@ -115,20 +131,42 @@ function addColor(event) {
     } else {   
         event.target.style.color = colorTask;
     }
-}
+};
 
-  createDaysOfTheWeek();
-  createDaysOfMonth();
-  createHolidayButton();
-  createFridayButton();
-  document.querySelector('#btn-holiday').addEventListener('click', changeHolidayColor);
-  document.querySelector('#btn-friday').addEventListener('click', changeFridayText);
-  document.querySelector('#btn-friday').addEventListener('click', changeFridayText);
-  document.querySelector('.days-container').addEventListener('mouseover', increaseFontSize);
-  document.querySelector('.days-container').addEventListener('mouseout', decreaseFontSize);
-  createTask('cozinhar');
-  createSubtitle('yellow');
-  createTask(' estudar');
-  createSubtitle('blue');
-  document.querySelector('.my-tasks').addEventListener('click', selectTask);
-  document.querySelector('.days-container').addEventListener('click', addColor);
+function addCommitment() {
+    let inputText = document.querySelector('#task-input');
+    let commitmentList = document.querySelector('.task-list');
+    let commitment = document.createElement('li');
+    let empty = '';
+    if (inputText.value !== empty) {
+        commitment.innerHTML =  inputText.value;
+        commitmentList.appendChild(commitment);
+    } else {
+        alert('Erro! Campo de texto vazio!');
+    }
+};
+
+let holidayButton = document.querySelector('#btn-holiday');
+let fridayButton = document.querySelector('#btn-friday');
+let daysCalendar = document.querySelector('.days-container');
+let tasksSubtitle = document.querySelector('.my-tasks');
+let tasksButton = document.querySelector('#btn-add');
+let inputTextKey = document.querySelector('#task-input');
+
+holidayButton.addEventListener('click', changeHolidayColor);
+
+fridayButton.addEventListener('click', changeFridayText);
+
+fridayButton.addEventListener('click', changeFridayText);
+
+daysCalendar.addEventListener('mouseover', increaseFontSize);
+
+daysCalendar.addEventListener('mouseout', decreaseFontSize);
+
+tasksSubtitle.addEventListener('click', selectTask);
+
+daysCalendar.addEventListener('click', addColor);
+
+tasksButton.addEventListener('click', addCommitment);
+
+inputTextKey.addEventListener('keypress', addCommitment);
