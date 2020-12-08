@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+
+.page-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.page-header h1 {
+    margin-left: 10%;
+}
+
+.main-text {
+    display: inline-block;
+}
+
+
+.main-article {
+    width: 50%;
+    text-align: justify;
+    margin: 10% 10%;
+    display: inline-block;
+}
+
+.aside-page {
+    float: right;
+    width: 15%;
+    text-align: left;
+    margin-right: 10%;
+    margin-top: 15%;
+}
+
+.aside-page h3 {
+    padding: 30px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.aside-page form {
+    padding: 30px;
+}
+
+#footer-text {
+    margin-left: 10%;
+}
+
+#btn-add {
+    margin-top: 20px;
+}
+
