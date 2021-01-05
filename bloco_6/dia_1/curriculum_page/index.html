@@ -5,9 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Curriculum Page</title>
 </head>
 <body>
-    
+    <Header>
+        <h1>Curriculum</h1>
+    </Header>
+    <main>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="name-input">Nome</label>
+                <input type="text" name="name" id="name-input" required maxlength="40">
+            </div>
+            <div>
+                <label for="email-input">Email</label>
+                <input type="email" name="email" id="email-input" required maxlength="50">
+            </div>
+            <div>
+                <label for="cpf-input">CPF</label>
+                <input type="number" name="cpf" id="cpf-input" required maxlength="11">
+            </div>
+            <div>
+                <label for="address-input">Endereço</label>
+                <input type="text" name="address" id="address-input" required maxlength="200">
+            </div>
+            <div>
+                <label for="city-input">Cidade</label>
+                <input type="text" name="city" id="city-input" required maxlength="28">
+            </div>
+            <div>
+                <label for="state-input">Estado</label>
+                <select name="state" id="state-input"></select>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Residencia</legend>
+                    <input type="radio" id="house-input" name="residence" value="house" required>
+                    <label for="house-input">Casa</label>
+                    <input type="radio" id="ap-input" name="residence" value="ap" required>
+                    <label for="ap-input">Apartamento</label>
+                </fieldset>
+            </div>
+        </fieldset>
+    </main>
 </body>
 </html>
