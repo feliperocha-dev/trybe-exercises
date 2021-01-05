@@ -37,7 +37,11 @@ function addCurriculum(event) {
     curriculum.className = 'curriculum-container';
     for (let index = 0; index < inputForm.length; index += 1) {
       const text = createParagraph(curriculum);
-      text.innerText = `${labelForm[index].innerText}: ${inputForm[index].value}`;
+      if (inputForm[index].type !== 'radio'){
+        text.innerText = `${labelForm[index].innerText}: ${inputForm[index].value}`;
+      } else {
+        text.innerText = `Residencia: ${inputForm[index].value}`;
+      }
     }
   }
 }
