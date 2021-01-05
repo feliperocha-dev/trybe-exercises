@@ -27,21 +27,36 @@ function addStates() {
   }
 }
 
-
 function addCurriculum(event) {
   event.preventDefault();
+  if (document.querySelector('.curriculum-container') === null) {
+    const mainContainer = document.querySelector('.main-container');
+    const inputForm = document.querySelectorAll('.input');
+    const labelForm = document.querySelectorAll('label');
+    const curriculum = createDiv(mainContainer);
+    curriculum.className = 'curriculum-container';
+    for (let index = 0; index < inputForm.length; index += 1) {
+      const text = createParagraph(curriculum);
+      text.innerText = `${labelForm[index].innerText}: ${inputForm[index].value}`;
+    }
+  }
+}
+
+function clearCurriculum(event) {
+  event.preventDefault();
   const mainContainer = document.querySelector('.main-container');
+  const curriculumContainer = document.querySelector('.curriculum-container'); 
+  mainContainer.removeChild(curriculumContainer);
   const inputForm = document.querySelectorAll('.input');
-  const curriculum = createDiv(mainContainer);
-  curriculum.className = 'curriculum-container;'
   for (let index = 0; index < inputForm.length; index += 1) {
-    const text = createParagraph(curriculum);
-    text.innerText = inputForm[index].value;
+    inputForm[index].value = null;
   }
 }
 
 window.onload = function () {
   const sendButton = document.querySelector('#send-button');
+  const clearButton = document.querySelector('#clear-button');
   addStates();
   sendButton.addEventListener('click', addCurriculum);
+  clearButton.addEventListener('click', clearCurriculum);
 };
