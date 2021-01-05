@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,62 +11,65 @@
     <Header>
         <h1>Curriculum</h1>
     </Header>
-    <main>
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <div>
-                <label for="name-input">Nome</label>
-                <input type="text" name="name" id="name-input" required maxlength="40">
-            </div>
-            <div>
-                <label for="email-input">Email</label>
-                <input type="email" name="email" id="email-input" required maxlength="50">
-            </div>
-            <div>
-                <label for="cpf-input">CPF</label>
-                <input type="number" name="cpf" id="cpf-input" required maxlength="11">
-            </div>
-            <div>
-                <label for="address-input">Endereço</label>
-                <input type="text" name="address" id="address-input" required maxlength="200">
-            </div>
-            <div>
-                <label for="city-input">Cidade</label>
-                <input type="text" name="city" id="city-input" required maxlength="28">
-            </div>
-            <div>
-                <label for="state-input">Estado</label>
-                <select name="state" id="state-input"></select>
-            </div>
-            <div>
-                <fieldset>
-                    <legend>Residencia</legend>
-                    <input type="radio" id="house-input" name="residence" value="house" required>
-                    <label for="house-input">Casa</label>
-                    <input type="radio" id="ap-input" name="residence" value="ap" required>
-                    <label for="ap-input">Apartamento</label>
-                </fieldset>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Experiencia Anterior</legend>
-            <div>
-                <label for="resume-input">Resumo do currículo</label><br>
-                <textarea name="resume" id="resume-input" cols="30" rows="10" maxlength="1000" required></textarea>
-            </div>
-            <div>
-                <label for="office-input">Cargo</label>
-                <input type="text" name="office" id="office-input" maxlength="40" required>
-            </div>
-            <div>
-                <label for="description-input">Descrição do Cargo</label>
-                <input type="text" name="description" id="description-input" maxlength="500" required>
-            </div>
-            <div>
-                <label for="start-date-input">Data de início</label>
-                <input type="date" name="start-date" id="start-date-input" required>
-            </div>
-        </fieldset>
+    <main class="main-container">
+        <form action="" id="form">
+            <fieldset id="fieldset-one">
+                <legend>Dados Pessoais</legend>
+                <div class="input-container">
+                    <label for="name-input">Nome</label>
+                    <input type="text" class="input" name="name" id="name-input" required maxlength="40">
+                </div>
+                <div class="input-container">
+                    <label for="email-input">Email</label>
+                    <input type="email" class="input" name="email" id="email-input" required maxlength="50">
+                </div>
+                <div class="input-container">
+                    <label for="cpf-input">CPF</label>
+                    <input type="number" class="input" name="cpf" id="cpf-input" required maxlength="11">
+                </div>
+                <div class="input-container">
+                    <label for="address-input">Endereço</label>
+                    <input type="text" class="input" name="address" id="address-input" required maxlength="200">
+                </div>
+                <div class="input-container">
+                    <label for="city-input">Cidade</label>
+                    <input type="text" class="input" name="city" id="city-input" required maxlength="28">
+                </div>
+                <div class="input-container">
+                    <label for="state-input">Estado</label>
+                    <select name="state" class="input" id="state-input"></select>
+                </div>
+                <div class="input-container">
+                    <fieldset>
+                        <legend>Residencia</legend>
+                        <input type="radio" class="input" id="house-input" name="residence" value="house" required>
+                        <label for="house-input">Casa</label>
+                        <input type="radio" class="input" id="ap-input" name="residence" value="ap" required>
+                        <label for="ap-input">Apartamento</label>
+                    </fieldset>
+                </div>
+            </fieldset>
+            <fieldset id="fieldset-two">
+                <legend>Experiencia Anterior</legend>
+                <div class="input-container">
+                    <label for="resume-input">Resumo do currículo</label><br>
+                    <textarea name="resume" class="input" id="resume-input" cols="30" rows="10" maxlength="1000" required></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="office-input">Cargo</label>
+                    <input type="text" class="input" name="office" id="office-input" maxlength="40" required>
+                </div>
+                <div class="input-container">
+                    <label for="description-input">Descrição do Cargo</label>
+                    <input type="text" class="input" name="description" id="description-input" maxlength="500" required>
+                </div>
+                <div class="input-container">
+                    <label for="start-date-input">Data de início</label>
+                    <input type="date" class="input" name="start-date" id="start-date-input" required>
+                </div>
+            </fieldset>
+            <button id="send-button">Enviar</button>
+        </form>
     </main>
 </body>
 </html>

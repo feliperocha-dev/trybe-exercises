@@ -1,7 +1,19 @@
 function createOption(container) {
   const option = document.createElement('option');
   container.appendChild(option);
-  return option
+  return option;
+}
+
+function createDiv(container) {
+  const div = document.createElement('div');
+  container.appendChild(div);
+  return div;
+}
+
+function createParagraph(container) {
+  const paragraph = document.createElement('p');
+  container.appendChild(paragraph);
+  return paragraph;
 }
 
 function addStates() {
@@ -15,6 +27,21 @@ function addStates() {
   }
 }
 
+
+function addCurriculum(event) {
+  event.preventDefault();
+  const mainContainer = document.querySelector('.main-container');
+  const inputForm = document.querySelectorAll('.input');
+  const curriculum = createDiv(mainContainer);
+  curriculum.className = 'curriculum-container;'
+  for (let index = 0; index < inputForm.length; index += 1) {
+    const text = createParagraph(curriculum);
+    text.innerText = inputForm[index].value;
+  }
+}
+
 window.onload = function () {
-  addStates()
+  const sendButton = document.querySelector('#send-button');
+  addStates();
+  sendButton.addEventListener('click', addCurriculum);
 };
