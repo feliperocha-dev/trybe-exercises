@@ -16,11 +16,21 @@ function createParagraph(container) {
   return paragraph;
 }
 
+function createHeader(container) {
+  const header = document.createElement('h3');
+  container.appendChild(header);
+  return header;
+}
+
 function addStates() {
   const selectContainer = document.querySelector('#state-input');
-  const statesAcronyms = ['AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'];
+  const statesAcronyms = ['', 'AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'];
   for (let index = 0; index < statesAcronyms.length; index += 1) {
     const state = createOption(selectContainer);
+    if (index === 0) {
+      state.style.display = 'none';
+      state.hidden;
+    }
     state.innerText = statesAcronyms[index];
     state.name = 'state';
     state.value = statesAcronyms[index];
@@ -35,9 +45,11 @@ function addCurriculum(event) {
     const labelForm = document.querySelectorAll('label');
     const curriculum = createDiv(mainContainer);
     curriculum.id = 'curriculum-container';
-    curriculum.className = 'row border border-2 rounded my-4 py-4 px-3';
+    curriculum.className = 'row border border-2 rounded-3 my-4 py-4 px-3 bg-white';
+    const title = createHeader(curriculum);
+    title.innerText = 'Curriculo';
+    title.className = 'text-center';
     for (let index = 0; index < inputForm.length; index += 1) {
-
       if (inputForm[index].type !== 'radio'){
         const text = createParagraph(curriculum);
         text.innerText = `${labelForm[index].innerText}: ${inputForm[index].value}`;
@@ -59,7 +71,6 @@ function clearCurriculum(event) {
     inputForm[index].value = null;
   }
 }
-
 
 window.onload = function () {
   const sendButton = document.querySelector('#send-button');
@@ -91,7 +102,5 @@ window.onload = function () {
           const year = parseInt(parts[2], 10);
           return new Date(year, month, day);
       }
-    });
-
-    
+    });    
 };

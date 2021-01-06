@@ -11,21 +11,21 @@
     <script src="script.js"></script>
     <title>Curriculum Page</title>
 </head>
-<body>
+<body class="bg-light bg-gradient">
     <Header class="container">
         <h1 class="text-center display-3">Curriculo</h1>
     </Header>
     <main class="main-container container">
         <form action="" id="form">
-            <div class="row border border-2 rounded my-4 py-4 px-3">
+            <div class="row border border-2 rounded-3 my-4 py-4 px-3 bg-white">
                 <h3>Dados Pessoais</h3>
                 <div class="input-container col-md-6 my-1">
                     <label for="name-input" class="form-label">Nome</label>
-                    <input type="text" class="input form-control" name="name" id="name-input" required maxlength="40">
+                    <input type="text" class="input form-control" data-validate-field="name" name="name" id="name-input">
                 </div>
                 <div class="input-container col-md-6 my-1">
                     <label for="email-input" class="form-label">Email</label>
-                    <input type="email" class="input form-control" name="email" id="email-input" required maxlength="50">
+                    <input type="email" class="input form-control" data-validate-field="email" name="email" id="email-input" required maxlength="50">
                 </div>
                 <div class="input-container col-md-4 my-1">
                     <label for="cpf-input" class="form-label">CPF</label>
@@ -35,11 +35,11 @@
                     <label for="address-input" class="form-label">Endereço</label>
                     <input type="text" class="input form-control" name="address" id="address-input" required maxlength="200">
                 </div>
-                <div class="input-container col-md-5 my-1">
+                <div class="input-container col-md-4 my-1">
                     <label for="city-input" class="form-label">Cidade</label>
                     <input type="text" class="input form-control" name="city" id="city-input" required maxlength="28">
                 </div>
-                <div class="input-container col-md-2 my-1">
+                <div class="input-container col-md-3 my-1">
                     <label for="state-input" class="form-label">Estado</label>
                     <select name="state" class="input form-select" id="state-input"></select>
                 </div>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row border border-2 rounded my-4 py-4 px-3">
+            <div class="row border border-2 rounded-3 my-4 py-4 px-3 bg-white">
                 <h3>Experiencia Anterior</h3>
                 <div class="input-container my-1">
                     <label for="resume-input" class="form-check-label">Resumo do currículo</label>
@@ -75,10 +75,11 @@
                 </div>
             </div>
             <div class="text-center my-4">
-                <button id="send-button" class="btn btn-success">Enviar</button>
-                <button id="clear-button" class="btn btn-danger">Limpar</button>
+                <button id="send-button" class="btn btn-success mx-3">Enviar</button>
+                <button id="clear-button" class="btn btn-danger mx-3">Limpar</button>
             </div>
         </form>
     </main>
+    <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
 </body>
 </html>
