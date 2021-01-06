@@ -37,12 +37,14 @@ function addCurriculum(event) {
     curriculum.id = 'curriculum-container';
     curriculum.className = 'row border border-2 rounded my-4 py-4 px-3';
     for (let index = 0; index < inputForm.length; index += 1) {
-      const text = createParagraph(curriculum);
+
       if (inputForm[index].type !== 'radio'){
+        const text = createParagraph(curriculum);
         text.innerText = `${labelForm[index].innerText}: ${inputForm[index].value}`;
-      } else {
+      } else if (inputForm[index].checked) {
+        const text = createParagraph(curriculum);
         text.innerText = `Residencia: ${inputForm[index].value}`;
-      }
+      } 
     }
   }
 }
@@ -58,10 +60,38 @@ function clearCurriculum(event) {
   }
 }
 
+
 window.onload = function () {
   const sendButton = document.querySelector('#send-button');
   const clearButton = document.querySelector('#clear-button');
   addStates();
   sendButton.addEventListener('click', addCurriculum);
   clearButton.addEventListener('click', clearCurriculum);
+  const picker = new Pikaday(
+    {
+      field: document.getElementById('start-date-input'),
+      firstDay: 1,
+      format: 'DD/MM/YYYY',
+      minDate: new Date(),
+      maxDate: new Date(2020, 01, 31),
+      yearRange: [2000,2020],
+      toString(date, format) {
+        // you should do formatting based on the passed format,
+        // but we will just return 'D/M/YYYY' for simplicity
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+      },
+      parse(dateString, format) {
+          // dateString is the result of `toString` method
+          const parts = dateString.split('/');
+          const day = parseInt(parts[0], 10);
+          const month = parseInt(parts[1], 10) - 1;
+          const year = parseInt(parts[2], 10);
+          return new Date(year, month, day);
+      }
+    });
+
+    
 };
