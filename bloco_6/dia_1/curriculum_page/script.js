@@ -29,12 +29,13 @@ function addStates() {
 
 function addCurriculum(event) {
   event.preventDefault();
-  if (document.querySelector('.curriculum-container') === null) {
+  if (document.querySelector('#curriculum-container') === null) {
     const mainContainer = document.querySelector('.main-container');
     const inputForm = document.querySelectorAll('.input');
     const labelForm = document.querySelectorAll('label');
     const curriculum = createDiv(mainContainer);
-    curriculum.className = 'curriculum-container';
+    curriculum.id = 'curriculum-container';
+    curriculum.className = 'row border border-2 rounded my-4 py-4 px-3';
     for (let index = 0; index < inputForm.length; index += 1) {
       const text = createParagraph(curriculum);
       if (inputForm[index].type !== 'radio'){
@@ -49,7 +50,7 @@ function addCurriculum(event) {
 function clearCurriculum(event) {
   event.preventDefault();
   const mainContainer = document.querySelector('.main-container');
-  const curriculumContainer = document.querySelector('.curriculum-container'); 
+  const curriculumContainer = document.querySelector('#curriculum-container'); 
   mainContainer.removeChild(curriculumContainer);
   const inputForm = document.querySelectorAll('.input');
   for (let index = 0; index < inputForm.length; index += 1) {
