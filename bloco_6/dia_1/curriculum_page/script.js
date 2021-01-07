@@ -102,5 +102,6 @@ window.onload = function () {
           const year = parseInt(parts[2], 10);
           return new Date(year, month, day);
       }
-    });    
+  });
+
 };
