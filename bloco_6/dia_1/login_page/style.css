@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(240, 245, 241);
+}
+
+.container {
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 50px;
+    width: 500px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.form-container {
+    margin: 10px auto;
+    padding: 10px auto;
+    width: 200px;
+}
+
+.button-container {
+    margin-top: 35px;
+    text-align: center;
+}

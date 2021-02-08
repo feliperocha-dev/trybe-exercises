@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Curriculum Page</title>
+</head>
+<body>
+    <Header>
+        <h1>Curriculum</h1>
+    </Header>
+    <main class="main-container">
+        <form action="" id="form">
+            <fieldset id="fieldset-one">
+                <legend>Dados Pessoais</legend>
+                <div class="input-container">
+                    <label for="name-input">Nome</label>
+                    <input type="text" class="input" name="name" id="name-input" required maxlength="40">
+                </div>
+                <div class="input-container">
+                    <label for="email-input">Email</label>
+                    <input type="email" class="input" name="email" id="email-input" required maxlength="50">
+                </div>
+                <div class="input-container">
+                    <label for="cpf-input">CPF</label>
+                    <input type="number" class="input" name="cpf" id="cpf-input" required maxlength="11">
+                </div>
+                <div class="input-container">
+                    <label for="address-input">Endereço</label>
+                    <input type="text" class="input" name="address" id="address-input" required maxlength="200">
+                </div>
+                <div class="input-container">
+                    <label for="city-input">Cidade</label>
+                    <input type="text" class="input" name="city" id="city-input" required maxlength="28">
+                </div>
+                <div class="input-container">
+                    <label for="state-input">Estado</label>
+                    <select name="state" class="input" id="state-input"></select>
+                </div>
+                <div class="input-container">
+                    <fieldset>
+                        <legend>Residencia</legend>
+                        <input type="radio" class="input" id="house-input" name="residence" value="Casa" required>
+                        <label for="house-input">Casa</label>
+                        <input type="radio" class="input" id="ap-input" name="residence" value="Apartamento" required>
+                        <label for="ap-input">Apartamento</label>
+                    </fieldset>
+                </div>
+            </fieldset>
+            <fieldset id="fieldset-two">
+                <legend>Experiencia Anterior</legend>
+                <div class="input-container">
+                    <label for="resume-input">Resumo do currículo</label><br>
+                    <textarea name="resume" class="input" id="resume-input" cols="30" rows="10" maxlength="1000" required></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="office-input">Cargo</label>
+                    <input type="text" class="input" name="office" id="office-input" maxlength="40" required>
+                </div>
+                <div class="input-container">
+                    <label for="description-input">Descrição do Cargo</label>
+                    <input type="text" class="input" name="description" id="description-input" maxlength="500" required>
+                </div>
+                <div class="input-container">
+                    <label for="start-date-input">Data de início</label>
+                    <input type="date" class="input" name="start-date" id="start-date-input" required>
+                </div>
+            </fieldset>
+            <button id="send-button">Enviar</button>
+            <button id="clear-button">Limpar</button>
+        </form>
+    </main>
+</body>
+</html>
