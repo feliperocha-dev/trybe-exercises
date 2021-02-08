@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: greenyellow;
+        margin: 40px;
+    }
+
+    body h1 {
+        font-size: 28px;
+    }
+
+    body h2 {
+        font-size: 22px;
+    }
+
+    body p{
+        font-size: 19px;
+    }
+}
