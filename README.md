@@ -83,7 +83,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 10-1: _Primeiros passos no Jest_
 - [X] 10-2: _Jest - Testes AssÃ­ncronos_
 - [X] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking]()_
+- [x] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking]()_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
