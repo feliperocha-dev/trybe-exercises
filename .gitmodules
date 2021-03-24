@@ -1,0 +1,9 @@
+[submodule "bloco_15/dia_3/exercise-portfolio-web"]
+	path = bloco_15/dia_3/exercise-portfolio-web
+	url = git@github.com:feliperocha-dev/exercise-portfolio-web.git
+[submodule "bloco_16/dia_2/exercises-redux-step-by-step"]
+	path = bloco_16/dia_2/exercises-redux-step-by-step
+	url = git@github.com:feliperocha-dev/exercises-redux-step-by-step.git
+[submodule "bloco_16/dia_2/exercise-react-with-redux-intro"]
+	path = bloco_16/dia_2/exercise-react-with-redux-intro
+	url = git@github.com:feliperocha-dev/exercise-react-with-redux-intro.git
