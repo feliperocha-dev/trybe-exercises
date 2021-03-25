@@ -1,0 +1,51 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  background-color: greenyellow;
+}
+
+.register-container > form {
+  align-self: center;
+  width: 500px;
+}
+
+.register-container > form > fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container > form > fieldset > div {
+  margin: 15px;
+}
+
+.register-container > form > fieldset > div > input {
+  margin-left: 10px;
+  width: 200px
+}
+
+.register-container > form > fieldset > div > label {
+  display: inline-block;
+  width: 80px;
+}
+
+.register-container > div > button:nth-of-type( 1 ) {
+  align-self: center;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  height: 30px;
+  margin: 30px;
+  width: 100px;
+}
+
+.register-container > div > button:nth-of-type( 2 ) {
+  align-self: center;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  height: 30px;
+  margin: 30px;
+  width: 100px;
+}

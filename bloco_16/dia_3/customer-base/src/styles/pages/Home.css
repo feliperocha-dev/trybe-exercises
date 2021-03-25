@@ -1,0 +1,16 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  background-color: greenyellow;
+}
+
+.home-container > button {
+  align-self: center;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  height: 30px;
+  width: 60px;
+}

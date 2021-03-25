@@ -1,0 +1,31 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  background-color: greenyellow;
+}
+
+.login-container > div {
+  margin: 10px
+}
+
+.login-container > div > label {
+  display: inline-block;
+  width: 80px;
+}
+
+.login-container > div > input {
+  margin-left: 10px;
+  width: 200px
+}
+
+.login-container > button {
+  align-self: center;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  height: 30px;
+  margin-top: 50px;
+  width: 60px;
+}

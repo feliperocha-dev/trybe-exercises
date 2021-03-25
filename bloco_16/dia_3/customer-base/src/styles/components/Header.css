@@ -1,0 +1,13 @@
+.header-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20%;
+  width: 100%;
+  background-color: green;
+}
+
+.header-container > ul {
+  list-style-type: none;
+}
