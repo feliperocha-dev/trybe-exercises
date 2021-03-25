@@ -1,0 +1,53 @@
+.App {
+  display: flex;
+}
+
+.form-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 350px;
+}
+
+#submit-button {
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  margin-top: 10px;
+  height: 30px;
+}
+
+#clear-button {
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  margin: 10px;
+  height: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container > form > fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form-container > form > fieldset > label {
+  align-self: flex-start;
+}
+
+.curriculum-container {
+  border: 1px solid black;
+  margin: 50px;
+  padding: 10px;
+  width: 700px;
+}
+
+.curriculum-container > h4 {
+  text-align: center;
+}
