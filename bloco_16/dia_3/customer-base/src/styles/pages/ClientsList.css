@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   height: 80%;
-  background-color: greenyellow;
+  background-color: #f0f2f5;
 }
 
 .clients-list-container > button {
