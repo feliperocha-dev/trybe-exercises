@@ -7,3 +7,6 @@
 [submodule "bloco_16/dia_2/exercise-react-with-redux-intro"]
 	path = bloco_16/dia_2/exercise-react-with-redux-intro
 	url = git@github.com:feliperocha-dev/exercise-react-with-redux-intro.git
+[submodule "bloco_16/dia_4/exercise-redux-thunk"]
+	path = bloco_16/dia_4/exercise-redux-thunk
+	url = git@github.com:feliperocha-dev/exercise-redux-thunk.git
