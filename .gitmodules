@@ -10,3 +10,6 @@
 [submodule "bloco_16/dia_4/exercise-redux-thunk"]
 	path = bloco_16/dia_4/exercise-redux-thunk
 	url = git@github.com:feliperocha-dev/exercise-redux-thunk.git
+[submodule "bloco_16/dia_4/exercise-game-of-thrones-characters"]
+	path = bloco_16/dia_4/exercise-game-of-thrones-characters
+	url = git@github.com:feliperocha-dev/exercise-game-of-thrones-characters.git
