@@ -13,3 +13,6 @@
 [submodule "bloco_16/dia_4/exercise-game-of-thrones-characters"]
 	path = bloco_16/dia_4/exercise-game-of-thrones-characters
 	url = git@github.com:feliperocha-dev/exercise-game-of-thrones-characters.git
+[submodule "bloco_18/dia_1/exercise-contextAPI-refactoring"]
+	path = bloco_18/dia_1/exercise-contextAPI-refactoring
+	url = git@github.com:feliperocha-dev/exercise-contextAPI-refactoring.git
