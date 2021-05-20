@@ -16,3 +16,6 @@
 [submodule "bloco_18/dia_1/exercise-contextAPI-refactoring"]
 	path = bloco_18/dia_1/exercise-contextAPI-refactoring
 	url = git@github.com:feliperocha-dev/exercise-contextAPI-refactoring.git
+[submodule "bloco_18/dia_2/exercise-react-hooks-refactoring"]
+	path = bloco_18/dia_2/exercise-react-hooks-refactoring
+	url = git@github.com:feliperocha-dev/exercise-react-hooks-refactoring.git
