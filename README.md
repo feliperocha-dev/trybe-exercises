@@ -157,11 +157,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 21-1: _FunÃ§Ãµes mais usadas no SQL_
 - [X] 21-2: _Descomplicando JOINs e UNIONs_
 - [X] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [X] 21-4: _[Projeto - Vocabulary Booster]()_
 
 ##### Bloco 22: Bancos de dados relacionais
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
+- [X] 22-1: _Transformando ideias em um modelo de banco de dados_
 - [ ] 22-2: _NormalizaÃ§Ã£o, Formas Normais e Dumps_
 - [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
 - [ ] 22-3: _[Projeto - One For All]()_
