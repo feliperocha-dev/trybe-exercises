@@ -188,7 +188,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 26: Intro - NodeJS
 
 - [X] 26-1: _NodeJS - IntroduÃ§Ã£o_
-- [ ] 26-2: _NodeJS - Fluxo AssÃ­ncrono_
+- [X] 26-2: _NodeJS - Fluxo AssÃ­ncrono_
 - [ ] 26-3: _NodeJS - Arquitetura_
 - [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
 
