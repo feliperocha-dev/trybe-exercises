@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 
-const SIMPSONS_DATA = 'simpsonsdsd.json';
+const SIMPSONS_DATA = 'simpsons.json';
 
 function getSimpsons() {
   return fs.readFile(SIMPSONS_DATA, 'utf-8')
