@@ -196,11 +196,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 27-1: _Express: HTTP com Node.js_
 - [X] 27-2: _Arquitetura de Software - IntroduÃ§Ã£o ao MVC_
-- [ ] 27-3: _[Projeto - Cookmaster]()_
+- [X] 27-3: _[Projeto - Cookmaster]()_
 
 ##### Bloco 28: NodeJS
 
-- [ ] 28-1: _Arquitetura de Software - Camada de ServiÃ§o_
+- [X] 28-1: _Arquitetura de Software - Camada de ServiÃ§o_
 - [ ] 28-2: _Arquitetura web - Rest e Restful_
 - [ ] 28-3: _[Projeto - Store Manager]()_
 
