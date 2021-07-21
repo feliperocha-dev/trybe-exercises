@@ -201,14 +201,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 28: NodeJS
 
 - [X] 28-1: _Arquitetura de Software - Camada de ServiÃ§o_
-- [ ] 28-2: _Arquitetura web - Rest e Restful_
-- [ ] 28-3: _[Projeto - Store Manager]()_
+- [X] 28-2: _Arquitetura web - Rest e Restful_
+- [X] 28-3: _[Projeto - Store Manager]()_
 
 ##### Bloco 29: NodeJS
 
-- [ ] 29-1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 29-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 29-3: _[Projeto - Cookmaster V2]()_
+- [X] 29-1: _NodeJS - JWT - (JSON Web Token)_
+- [X] 29-2: _NodeJS - Upload de arquivos com Multer_
+- [X] 29-3: _[Projeto - Cookmaster V2]()_
 
 ##### Bloco 30: IntroduÃ§Ã£o - Deploy
 
